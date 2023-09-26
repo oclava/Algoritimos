@@ -12,7 +12,7 @@ int main() {
             printf("senha valida!\n");
             break;
         }   else{
-            printf("senha invalida!");
+            printf("senha invalida!\n");
         }
         
     }

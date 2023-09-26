@@ -1,25 +1,25 @@
 #include <stdio.h>
 
 int main() {
-    int salario;
-    char exp, a,b,c;
-    scanf("%c", &exp);
-    scanf("%d", &salario);
-    if (exp == a);
+    float salario, porcentagem;
+    char exp;
+    scanf(" %c", &exp);
+    scanf("%f", &salario);
+    porcentagem = 0;
+    if (exp == 'a')
     {
-        salario *= 0.05;
+        porcentagem = salario * 0.05;
     }
-    if (exp == b)
+    else if (exp == 'b')
     {
-        salario *= 0.07;
+        porcentagem = salario * 0.07;
     }
-    if (exp == c)
+    else if (exp == 'c')
     {
-        salario *= 0.08;
+        porcentagem = salario * 0.08;
     }
-    printf("R$ %d", salario);
-    
-    
+    salario += porcentagem;
+    printf("R$ %.2f\n", salario);
 
     return 0;
 }

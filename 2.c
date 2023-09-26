@@ -15,11 +15,11 @@ int main(){
         printf("%d eh impar\n", N);
     }
 
-    while (n!= 0) {
-    soma += n % 10; 
-    n/= 10;}
+    for (; n != 0; n /= 10) {
+        soma += n % 10;
+    }
     
-    printf("A soma dos algarismos de %d eh igual a %d\n", N, soma);    
+    printf("A soma dos algarismos de %d eh %d\n", N, soma);    
 
     return 0;
 }
